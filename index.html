@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3e6a4f7f52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/index.css">
+
+</head>
+
+<body>
+
+    <!-- Header Started -->
+    <header class="container-fluid mt-5 mb-5 px-lg-5">
+        <nav class="navbar bg-primary-subtle bg-opacity-10 rounded-3 px-4">
+
+            <div class="container-fluid">
+                <div>
+                    <h2 class="fw-bold mb-0">Interactive
+                    </h2>
+                    <h4 class="text-secondary">Geometry Genius</h4>
+                </div>
+
+                <button id="btn-blog" class="btn btn-primary px-5 py-2">Blog</button>
+            </div>
+
+        </nav>
+    </header>
+    <!-- End of Header -->
+
+
+    <!-- main started -->
+    <main>
+
+        <section class="container-fluid mt-5 mb-5 px-lg-5">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-md-4">
+                <div class="col col-lg-9">
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                        <!-- card-1 triangle -->
+                        <div class="col">
+                            <div class="card h-100 text-center p-3 shadow">
+
+                                <img src="images/triangle.png" class="card-img-top  w-75 h-75 mb-4 mx-auto" alt="...">
+
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+                                    <h5 id="triangle-title" class="card-title fw-bold">Triangle</h5>
+                                    <p class="card-text ">Area (A) = 0.5 <span>&#215;</span> b <span>&#215;</span> h</p>
+
+                                    <div class="d-flex w-100 justify-content-center align-items-center px-4 px-md-2">
+
+                                        <!-- input field b -->
+                                        <input type="text" class="form-control bg-body-secondary me-2" id="triangle-b"
+                                            placeholder="b">
+                                        <h6 class="fw-normal">cm</h6>
+
+                                        <!-- input field h -->
+                                        <input type="text" class="form-control bg-body-secondary ms-2 me-2"
+                                            id="triangle-h" placeholder="h">
+                                        <h6 class="fw-normal">cm</h6>
+                                    </div>
+
+                                    <button id="btn-triangle"
+                                        class="btn btn-primary w-100 mt-5 fw-bold">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-2 Rectangle -->
+                        <div class="col">
+                            <div class="card h-100 text-center p-3 shadow">
+
+                                <img src="images/rectangle.png" class="card-img-top  w-75 h-75 mb-4 mx-auto" alt="...">
+
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+                                    <h5 id="rectangle-title" class="card-title fw-bold">Rectangle</h5>
+                                    <p class="card-text ">Area (A) = w <span>&#215;</span> I</p>
+
+                                    <div class="d-flex w-100 justify-content-center align-items-center px-4 px-md-2">
+
+                                        <!-- input field w -->
+                                        <input type="text" class="form-control bg-body-secondary me-2" id="rectangle-w"
+                                            placeholder="w">
+                                        <h6 class="fw-normal">cm</h6>
+
+                                        <!-- input field l -->
+                                        <input type="text" class="form-control bg-body-secondary ms-2 me-2"
+                                            id="rectangle-l" placeholder="l">
+                                        <h6 class="fw-normal">cm</h6>
+                                    </div>
+
+                                    <button id="btn-rectangle"
+                                        class="btn btn-primary w-100 mt-5 fw-bold">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-3 Parallelogram -->
+                        <div class="col">
+                            <div class="card h-100 text-center p-3 shadow">
+
+                                <img src="images/parallelogram.png" class="card-img-top  w-100 h-75 mb-4 mx-auto"
+                                    alt="...">
+
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+                                    <h5 id="parallelogra-title" class="card-title fw-bold">Parallelogram</h5>
+                                    <p class="card-text ">Area (A) = b <span>&#215;</span> h</p>
+
+                                    <div class="d-flex w-100 justify-content-center align-items-center px-4 px-md-2">
+
+                                        <!-- input field b -->
+                                        <input type="text" class="form-control bg-body-secondary me-2"
+                                            id="parallelogram-b" placeholder="b">
+                                        <h6 class="fw-normal">cm</h6>
+
+                                        <!-- input field h -->
+                                        <input type="text" class="form-control bg-body-secondary ms-2 me-2"
+                                            id="parallelogram-h" placeholder="h">
+                                        <h6 class="fw-normal">cm</h6>
+                                    </div>
+
+                                    <button id="btn-parallelogram"
+                                        class="btn btn-primary w-100 mt-5 fw-bold">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card-4 Rhombus -->
+                        <div class="col">
+                            <div class="card h-100 text-center p-3 shadow">
+                                <img src="images/rhombus.png" class="card-img-top  w-75 h-auto mb-4 mx-auto" alt="...">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                    <h5 id="rhombus-title" class="card-title fw-bold">Rhombus</h5>
+                                    <p class="card-text ">Area (A) = 0.5 <span>&#215;</span>
+                                        d<sub>1</sub> <span>&#215;</span> d<sub>2</sub></p>
+
+                                    <div class="d-flex w-100 justify-content-center align-items-center px-4 px-md-2">
+
+                                        <!-- input field d1 -->
+                                        <input type="text" class="form-control bg-body-secondary me-2" id="rhombus-d1"
+                                            placeholder="d&#8321;">
+                                        <h6 class="fw-normal">cm</h6>
+
+                                        <!-- input field d2 -->
+                                        <input type="text" class="form-control bg-body-secondary ms-2 me-2"
+                                            id="rhombus-d2" placeholder="d&#8322;">
+                                        <h6 class="fw-normal">cm</h6>
+                                    </div>
+
+                                    <button id="btn-rhombus" type="button"
+                                        class="btn btn-primary w-100 mt-5 fw-bold">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card-5 Pentagon -->
+                        <div class="col">
+                            <div class="card h-100 text-center p-3 shadow">
+
+                                <img src="images/pentagon.png" class="card-img-top w-75 h-75 mb-4 mx-auto" alt="...">
+
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+                                    <h5 id="pentagon-title" class="card-title fw-bold">Pentagon</h5>
+                                    <p class="card-text ">Area (A) = 0.5 <span>&#215;</span> p <span>&#215;</span> b</p>
+
+                                    <div class="d-flex w-100 justify-content-center align-items-center px-4 px-md-2">
+
+                                        <!-- input field p -->
+                                        <input type="text" class="form-control bg-body-secondary me-2" id="pentagon-p"
+                                            placeholder="p">
+                                        <h6 class="fw-normal">cm</h6>
+
+                                        <!-- input field b -->
+                                        <input type="text" class="form-control bg-body-secondary ms-2 me-2"
+                                            id="pentagon-b" placeholder="b">
+                                        <h6 class="fw-normal">cm</h6>
+                                    </div>
+
+                                    <button id="btn-pentagon" type="button"
+                                        class="btn btn-primary w-100 mt-5 fw-bold">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-6 Ellipse -->
+                        <div class="col">
+                            <div id="card-ellise" class="card h-100 text-center p-3 shadow">
+
+                                <img src="images/ellipse.png" class="card-img-top   mb-4 mx-auto" alt="...">
+
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+                                    <h5 id="ellipse-title" class="card-title fw-bold">Ellipse</h5>
+                                    <p class="card-text ">Area (A) = <span>&pi;</span>ab</p>
+
+                                    <div class="d-flex w-100 justify-content-center align-items-center px-4 px-md-2">
+
+                                        <!-- input field a  -->
+                                        <input type="text" class="form-control bg-body-secondary me-2" id="ellipse-a"
+                                            placeholder="a">
+                                        <h6 class="fw-normal">cm</h6>
+
+                                        <!-- input field b -->
+                                        <input type="text" class="form-control bg-body-secondary ms-2 me-2"
+                                            id="ellipse-b" placeholder="b">
+                                        <h6 class="fw-normal">cm</h6>
+                                    </div>
+
+                                    <button id="btn-ellipse" type="button"
+                                        class="btn btn-primary w-100 mt-5 fw-bold">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Result Area -->
+                <div class="col col-lg-3 cols-md-3 g-4">
+                    <!-- card-6 Ellipse -->
+                    <div class="col">
+                        <div id="card-result" class="card h-100 text-center">
+                            <h5><u>Area Calculation</u></h5>
+
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+                                <!-- Table -->
+                                <table class="table border-white w-auto">
+                                    <!-- <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>First</th>
+                                            <th>Last</th>
+                                            <th>Handle</th>
+                                        </tr>
+                                    </thead> -->
+                                    <!-- Table Body -->
+                                    <tbody id="table-body-result">
+                                        <!-- <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr> -->
+
+
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/blog.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/triangle.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
+    <script src="js/randomColor.js"></script>
+    <script src="js/result.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
